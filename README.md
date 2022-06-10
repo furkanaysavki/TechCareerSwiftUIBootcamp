@@ -2,15 +2,16 @@
 
 1)	Ekrana 10 kez “Hello World!” yazdır.
 
-var i = 0
+``` var i = 0
 while i < 10 {
     
     print("Hello World")
     i += 1
-}
+} 
+```
 
 2)	43 sayısına kadar olan TEK sayıları print et
-
+```
 for i in 1..<43 {
     if i % 2 == 1 {
         print(i)
@@ -18,16 +19,18 @@ for i in 1..<43 {
     
  
 }
+```
 
 3)	Dışarıdan aldığı metnin soluna “TR-” ekleyip döndüren metot
-
+```
 func addTr(Word : String) {
      print("TR-\(Word)")
     
 }
+```
 
 4)	Dışarıdan girilen bir sayının rakamları toplamını bulan program.  ( Örneğin kullanıcı 431 girdiğinde sonuç: 8 olacak)
-
+```
 var sum = 0
 
 func SumOfDigits(number:Int)->Int {
@@ -50,9 +53,10 @@ func Date(number:Int) {
 
 
 }
+```
 
 6)	Dışarıdan girilen üç sayıdan en büyüğünü bulan metot
-
+```
 func maxNumber(_ x: Int, _ y: Int, _ z: Int) -> Int {
     if x > y, x > z
     {
@@ -79,3 +83,4 @@ func maxNumber(_ x: Int, _ y: Int, _ z: Int) -> Int {
         return x
     }
 }
+```
