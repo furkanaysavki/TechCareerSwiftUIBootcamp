@@ -84,3 +84,15 @@ func maxNumber(_ x: Int, _ y: Int, _ z: Int) -> Int {
     }
 }
 ```
+9)	Dışarıdan bir isim dizisi alan ve isimleri tek tek print eden fonksiyon
+```
+func name(text : [String])   {
+   
+    for character in text {
+        
+            
+            print(character)
+        }
+       
+    }
+```
