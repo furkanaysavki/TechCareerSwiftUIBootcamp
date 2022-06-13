@@ -42,14 +42,15 @@ func SumOfDigits(number:Int)->Int {
 
     return sum
 }
+```
 
 5)	 Doğduğum günden bugüne kaç gün geçtiğini gösteren metot? Dışarıdan date alacak int dönüyor. 
-
-func Date(number:Int) {
+```
+func Date(number:Int) -> Int {
     
  var difference = 2022 - number
  var result = difference * 365
-    return print(result)
+    return result
 
 
 }
@@ -84,7 +85,19 @@ func maxNumber(_ x: Int, _ y: Int, _ z: Int) -> Int {
     }
 }
 ```
-9)	Dışarıdan bir isim dizisi alan ve isimleri tek tek print eden fonksiyon
+
+7)	Dışarıdan bir metin alan aldığı metnin sadece ilk üç harfini döndüren fonksiyon.
+```
+func text(message : String) -> String  {
+    return String(message.prefix(3))
+   
+
+
+
+}
+```
+
+8)	Dışarıdan bir isim dizisi alan ve isimleri tek tek print eden fonksiyon
 ```
 func name(text : [String])   {
    
@@ -96,3 +109,39 @@ func name(text : [String])   {
        
     }
 ```
+
+9)	 Dışarıdan bir isim dizisi alan, ismin uzunluğu 4 den büyükse print eden fonksiyon.
+```
+func text(charArr : [String]) {
+    
+    for i in charArr {
+        if i.count > 4 {
+            print(i)
+        } else {
+            print("")
+        }
+    }
+}
+```
+10)	 Dışarıdan bir metin alan ve aldığı metinde kaç adet "e" harfi olduğunu söyleyen fonksiyon.
+```
+func text(str : String) {
+    var i = 0
+    for a in str {
+        if a == "e" {
+            i += 1
+            
+        }
+       
+        
+    }
+    print(i)
+}
+```
+11)	 Dışarıdan bir metin alan aldığı metnin sadece ilk harfini büyük diğer harflerini küçük yazacak şekilde yeni bir metin oluşturarak dönen fonksiyon.
+```
+func text(str : String) -> String {
+    return str.capitalized
+    }
+```
+
