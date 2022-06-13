@@ -2,7 +2,8 @@
 
 1)	Ekrana 10 kez “Hello World!” yazdır.
 
-``` var i = 0
+```
+var i = 0
 while i < 10 {
     
     print("Hello World")
